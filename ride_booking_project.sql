@@ -1,8 +1,8 @@
 
-SELECT name from sys.databases ;
-use rapido_bikes_db;
-
-select * from booking_rawdata
+select 
+city, count(booking_id) as total_booking
+from booking_rawdata
+group by city;
 
 
 
